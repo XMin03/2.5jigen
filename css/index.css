@@ -53,12 +53,10 @@ section{
     background-color: black;
 }
 .image{
-    display: inline-block;
-    width: 20%;
-    height:40%;
-    padding-right: 2%;
+    padding-right: 20%;
     padding-bottom:2%;
 }
 section img{
-    image-resolution: 100%;
+    display: inline-block;
+    width: 20%;
 }
