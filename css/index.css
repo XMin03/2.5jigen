@@ -23,7 +23,7 @@ nav img{
     padding-left: 1%;
 }
 ul{
-    width: 35%;
+    width: 38%;
     border: gold 1 solid;
     position: absolute;
     left: 60%;
@@ -76,6 +76,16 @@ section:hover > p{
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    position: relative;
+}
+.izquierda{
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+.derecha{
+    position: absolute;
+    right:10px;
 }
 .image{
     position: relative;
@@ -94,7 +104,7 @@ section:hover > p{
 }
 .game img{
     display: inline-block;
-    width: 300px;
+    width: 400px;
     height: 400px;
     scroll-snap-align: center;
 }
