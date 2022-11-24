@@ -71,21 +71,26 @@ section p{
 section:hover > p{
     visibility: visible;
 }
+.section{
+    position: relative;
+}
+.izquierda{
+    position: absolute;
+    top:40%;
+    left: 1%;
+    z-index: 1;
+}
+.derecha{
+    position: absolute;
+    top:40%;
+    right:1%;
+}
 .carrusel{
     background-color: black;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     position: relative;
-}
-.izquierda{
-    position: absolute;
-    left: 10px;
-    z-index: 1;
-}
-.derecha{
-    position: absolute;
-    right:10px;
 }
 .image{
     position: relative;
