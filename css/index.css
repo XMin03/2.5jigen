@@ -132,3 +132,36 @@ section:hover > p{
 #film a:hover{
     color:orangered;
 }
+footer{
+    background-color: black;
+    color: white;
+    
+}
+#foot{
+    border-left: white 1px solid;
+    
+}
+#foot p{
+    text-align: left;
+    color: white;
+}
+form{
+    padding-top:1%;
+}
+ 
+#text{
+    background-color: black;
+    border: white 1px solid;
+    color: white;
+    font-size: 3em;
+    height: 1.5em;
+    width: 30%;
+    margin-right:1%
+}
+#submit{    
+    background-color: black;
+    border: orangered 1px solid;
+    color: orangered;
+    font-size: 3em;
+    height: 1.5em;
+}
