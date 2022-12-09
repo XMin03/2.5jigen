@@ -5,6 +5,19 @@
 body{
     background-color: black;
 }
+/*welcome*/
+h1{
+    font-size: 5em;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+/*reccomended, thanks*/
+h2{
+    color: gray;
+    padding:1% 10%;
+}
+/*menu*/
 nav{
     height: 100px;
     position: relative;
@@ -34,8 +47,70 @@ nav img{
     width: 100px;
     padding-left: 5%;
 }
-
-
+article{
+    margin:0 20%;
+    height:90vh;
+    overflow-y: scroll;
+}
+/*section que contiene la img y .detalle*/
+.product{
+    position: relative;
+    margin:1%; 
+    width: 350px;
+    height: 600px;
+    border: gold 1px solid;
+    float: left;
+}
+.product img{
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    scroll-snap-align: center;
+}
+/*muestra el nombre al poner cursor arriba*/
+p{
+    color:gray;
+    text-align: center;
+}
+.product::before{
+    content: "vista rapida";
+    position: absolute;
+    color: black;
+    bottom: 20%;
+    background-color: white;
+    opacity: 80%;
+    width: 100%;
+    height: 10%;
+}
+.product:hover > .product::before{
+    visibility: visible;
+}
+hr{
+    color: white;
+    position:absolute;
+    width: 50%;
+    left: 25%;
+}
+/*section para pelicula*/
+#film{
+    position: relative;
+}
+#film img{
+    width: 100%;
+}
+#film a{
+    position: absolute;
+    width: 100%;
+    bottom:30%;
+    left:0;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding: 0;
+}
+#film a:hover{
+    color:orangered;
+}
 
 /*pie de pagina*/
 footer{
