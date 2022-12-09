@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/sesion.css">
+    <link rel="stylesheet" href="../css/registrar.css">
     <title>Registrar</title>
 </head>
 <body>
@@ -12,18 +12,17 @@
         <a href="../index.html">x</a>
     </section>
     <section id="caja">
-        <h1>Regístrate</h1>
-        <p>¿Ya tienes un perfil personal?<a href="">iniciar sesion</a></p>
-        <a href="">
-            <section class="registrar" id="facebook">
-                <img src="../img/facebook.jpg"/>Registrar con Facebook
-            </section>
-        </a>
-        <a href="">
-            <section class="registrar" id="google">
-                <img src="../img/google.jpg"/>Registrar con Google+
-            </section>
-        </a>
+        <h1>Iniciar sesión</h1>
+        <p>¿Eres nuevo en este sitio?<a href="registrar.html">Registrate</a></p>
+        <form action="">
+            <input class="sesion" type="text" placeholder="email" name="email"><br>
+            <input class="sesion" type="password" placeholder="password" name="password"><br>
+            <input id="registrar" type="submit" value="Iniciar sesion">
+        </form>
+        <a href="" id="olvidar">¿Olvidaste la contraseña?</a>
+        <hr>
+        <a href=""><img src="../img/facebook.jpg"/></a>
+        <a href=""><img src="../img/google.jpg"/></a>
     </section>
 </body>
 </html>

@@ -54,14 +54,31 @@ a{
     color: white;
     text-decoration: none;
 }
-#facebook{
-    background-color: #3b5998;
+.sesion{
+    margin: 1%;
+    width: 50%;
+    height: 2em;
+    color: white;
+    background-color: black;
+    border: none;
+    border-bottom: 1px orangered solid;
 }
-#google{
-    background-color: #4285f4;
+#registrar{
+    width: 50%;
+    background-color: orangered;
+    border: none;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+}
+#olvidar{
+    text-decoration:underline;
+
+}
+hr{
+    margin: 2%;
 }
 img {
-    position: absolute;
     width: 7%;
-    left: 5%;
+    padding: 1%;
 }
