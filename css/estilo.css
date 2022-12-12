@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    min-width: 700px;
 }
 /*welcome*/
 h1{
@@ -71,12 +72,15 @@ p{
     top:45%;
     left: 1%;
     z-index: 1;
-
+    background-color: white;
+    opacity: 80%;
 }
 .derecha{
     position: absolute;
     top:45%;
     right:1%;
+    background-color: white;
+opacity: 80%;
 }
 
 /*carrusel*/
