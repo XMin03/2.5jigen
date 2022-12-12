@@ -67,23 +67,29 @@ article{
     height: 500px;
     scroll-snap-align: center;
 }
-/*muestra el nombre al poner cursor arriba*/
 p{
+    display: flex;
     color:gray;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     text-align: center;
 }
-.product::before{
+/*vista rapida*/
+.product:hover::before{
     content: "vista rapida";
     position: absolute;
     color: black;
-    bottom: 20%;
+    bottom: 17%;
     background-color: white;
     opacity: 80%;
     width: 100%;
     height: 10%;
-}
-.product:hover > .product::before{
-    visibility: hidden;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 4%;
+    box-sizing: border-box;
 }
 hr{
     color: white;
