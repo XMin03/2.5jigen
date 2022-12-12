@@ -83,7 +83,7 @@ p{
     height: 10%;
 }
 .product:hover > .product::before{
-    visibility: visible;
+    visibility: hidden;
 }
 hr{
     color: white;
