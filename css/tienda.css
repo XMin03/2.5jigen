@@ -50,7 +50,7 @@ nav img{
 article{
     margin:0 20%;
     height:90vh;
-    overflow-y: scroll;
+    overflow-x:scroll;
 }
 /*section que contiene la img y .detalle*/
 .product{
@@ -81,7 +81,7 @@ p{
     content: "vista rapida";
     position: absolute;
     color: black;
-    bottom: 17%;
+    bottom: 16.5%;
     background-color: white;
     opacity: 80%;
     width: 100%;
