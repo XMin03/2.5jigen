@@ -11,7 +11,7 @@ nav{
     height: 100px;
     position: relative;
 }
-ul{
+nav ul{
     position: absolute;
     right:1%;
     top:40%;
@@ -19,12 +19,12 @@ ul{
     display: flex;
     justify-content: end;
 }
-li{
+nav li{
     display: inline-block;
     padding-right: 2%;
     font-size: 1.5em;
 }
-a{
+nav a{
     text-decoration: none;
     color: gray;
 }
@@ -38,34 +38,101 @@ nav img{
 }
 
 
+#caja{
+    height:90vh;
+    position: relative;
+}
+/*filtro*/
+h1{
+    color: orangered;
+    padding: 2% 0 1% 2%;
+
+    font-size: 1.5em;
+}
+#caja h2{
+    color: white;
+    padding: 0.5% 2%;
+    font-size: 1.1em;
+    border-top: white 1px solid;
+    margin-left:2%;
+    width: 10%;
+}
+input[type="radio"],input[type="checkbox"] {
+    display: none;
+}
+.lista {
+    padding-left: 4%;
+    padding-bottom: 1%;
+    text-align: left;
+    border-bottom: white 1px solid;
+    margin-left:2%;
+    width: 10%;
+}
+label {
+    padding-top: 0.5%;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+label:hover{
+    color: gray;
+}
+
+
+/* Estilos cuando un radio esta seleccionado
+ --------------------------------------------------*/
+[value="category"]:checked ~ h2 label[for="category"]{
+   color:gray;
+}
+[value="all"]:checked ~ .lista label[for="all"],
+[value="anime"]:checked ~ .lista label[for="anime"], 
+[value="manga"]:checked ~ .lista label[for="manga"], 
+[value="novel"]:checked ~ .lista label[for="novel"], 
+[value="game"]:checked ~ .lista label[for="game"] {
+    color: orangered;
+}
+
+/* Filtramos las clases mediante el selector ~
+--------------------------------------------------*/
+[value="category"]:checked ~ .lista,
+[value="anime"]:checked ~ #contenido section:not([name~="anime"]),
+[value="manga"]:checked ~ #contenido section:not([name~="manga"]),
+[value="novel"]:checked ~ #contenido section:not([name~="novel"]),
+[value="game"]:checked ~ #contenido section:not([name~="game"]){
+    display: none;
+}
+
 
 /*caja de productos*/
-article{
-    margin:0 20%;
+#contenido{
     height:90vh;
     overflow-x:scroll;
+    margin: 0 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 /*todos los productos*/
-.product{
+#contenido section{
     position: relative;
     margin:1%; 
-    width: 350px;
-    height: 600px;
+    width: 250px;
+    height: 450px;
     border: gold 1px solid;
     float: left;
 }
-.product img{
+#contenido section img{
     display: inline-block;
-    width: 350px;
-    height: 500px;
+    width: 250px;
+    height: 350px;
     scroll-snap-align: center;
 }
 /*vista rapida*/
-.product::before{
+#contenido section::before{
     content: "vista rapida";
     position: absolute;
     color: #555;
-    bottom: 16.5%;
+    bottom: 22%;
     background-color: white;
     opacity: 80%;
     width: 100%;
@@ -79,11 +146,12 @@ article{
     box-sizing: border-box;
     transition: 0.5s;
 }
-.product:hover::before{
+#contenido section:hover::before{
     height: 10%;
 }
+
 /*categoria que está arriba izquierda*/
-.product::after{
+#contenido section::after{
     content:attr(name);
     background-color: orangered;
     position: absolute;
