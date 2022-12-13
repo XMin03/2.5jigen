@@ -114,17 +114,17 @@ opacity: 80%;
     width: 90%;
     background-color: black;
     color:gray;
-    opacity: 80%;
+    opacity: 0%;
     bottom:1%;
     position: absolute;
     vertical-align: bottom;
-    visibility: hidden;
+    transition: 0.5s;
     padding-top: 100%;
     text-align: left;
     padding-left: 10%;
 }
 section:hover > .detalle{
-    visibility: visible;
+    opacity: 80%;
 }
 
 /*section para pelicula*/
