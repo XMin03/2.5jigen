@@ -69,11 +69,11 @@ input[type="radio"],input[type="checkbox"] {
     border-radius: 20px;
     transition: all 0.5s;
 }
-#category,#pruebas{
+#category,#estrella{
     background-color: orangered;
     
 }
-#category::after,#pruebas::after{
+#category::after,#estrella::after{
     content: '';
     position: absolute;
     width: 0.9em;
@@ -106,11 +106,11 @@ label:hover{
 /* Estilos cuando un radio esta seleccionado
  --------------------------------------------------*/
 [value="category"]:checked ~ aside #category::after,
-[value="pruebas"]:checked ~ aside #pruebas::after{
+[value="estrella"]:checked ~ aside #estrella::after{
    transform: translateX(-1em);
 }
 [value="category"]:checked ~ aside #category,
-[value="pruebas"]:checked ~ aside #pruebas{
+[value="estrella"]:checked ~ aside #estrella{
     background-color: #bfbfbf;
  }
 [value="all-category"]:checked ~ aside #list-category label[for="all-category"],
@@ -130,7 +130,7 @@ label:hover{
 /* Filtramos las clases mediante el selector ~
 --------------------------------------------------*/
 [value="category"]:checked ~ aside #list-category,
-[value="pruebas"]:checked ~ aside #list-pruebas,
+[value="estrella"]:checked ~ aside #list-estrella,
 [value="anime"]:checked ~ article section:not([category="anime"]),
 [value="manga"]:checked ~ article section:not([category="manga"]),
 [value="novel"]:checked ~ article section:not([category="novel"]),
