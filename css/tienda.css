@@ -122,7 +122,6 @@ label:hover{
     float: left;
 }
 #contenido section img{
-    display: inline-block;
     width: 250px;
     height: 350px;
     scroll-snap-align: center;
