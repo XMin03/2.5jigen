@@ -24,28 +24,44 @@ nav li{
     padding-right: 2%;
     font-size: 1.5em;
 }
-nav a{
+li a{
     text-decoration: none;
     color: gray;
+    position: relative;
+    overflow: hidden;
 }
-a:hover{
+li a:hover{
     color: orangered;
+}
+li a::after{
+    content: '';
+    height: 0.1em;
+    background-color: orangered;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: right;
+}
+li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 /*logo*/
 nav img{
     width: 100px;
     padding-left: 5%;
 }
-
-
 main{
     height:90vh;
     position: relative;
 }
 /*filtro*/
-h1{
+main h1{
     color: orangered;
-    padding: 2% 0 1% 2%;
+    padding: 1% 0 1% 2%;
 
     font-size: 1.5em;
 }
@@ -146,33 +162,34 @@ label:hover{
 
 /*caja de productos*/
 article{
-    height:90vh;
-    overflow-x:scroll;
-    margin: 0 20%;
     position: absolute;
-    right: 0;
     top: 0;
+    height:90vh;
+    width: 60%;
+    margin: 0 20%;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
 }
 /*todos los productos*/
 article section{
     position: relative;
     margin:1%; 
-    width: 250px;
-    height: 450px;
+    width: 240px;
+    height: 400px;
     border: gold 1px solid;
-    float: left;
+    display: inline-block;
+    scroll-snap-align: start;
 }
 article section img{
-    width: 250px;
-    height: 350px;
-    scroll-snap-align: center;
+    width: 240px;
+    height: 320px;
 }
 /*vista rapida*/
 article section::before{
     content: "vista rapida";
     position: absolute;
     color: #555;
-    bottom: 22%;
+    bottom: 20%;
     background-color: white;
     opacity: 80%;
     width: 100%;
@@ -189,7 +206,6 @@ article section::before{
 article section:hover::before{
     height: 10%;
 }
-
 /*categoria que está arriba izquierda*/
 article section::after{
     content:attr(category);

@@ -22,7 +22,7 @@ body {
     color: gray;
     text-decoration: none;
 }
-#caja {
+main {
     width: 30%; 
     text-align: center;
     margin: auto;
@@ -33,7 +33,7 @@ h1{
     font-weight: 100;
     font-size: 3em;
 }
-#caja p{
+main p{
     padding: 5%;
 }
 p a{

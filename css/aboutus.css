@@ -24,12 +24,30 @@ li{
     padding-right: 2%;
     font-size: 1.5em;
 }
-a{
+li a{
     text-decoration: none;
     color: gray;
+    position: relative;
+    overflow: hidden;
 }
-a:hover{
+li a:hover{
     color: orangered;
+}
+li a::after{
+    content: '';
+    height: 0.1em;
+    background-color: orangered;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: right;
+}
+li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 /*logo*/
 nav img{
@@ -51,7 +69,7 @@ h1{
     padding-left: 5%;
     padding-bottom: 5%;
 }
-section{
+main,section{
     padding-left: 8%;
 }
 h2{
