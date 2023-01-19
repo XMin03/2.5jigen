@@ -25,11 +25,12 @@ nav>ul> li{
     font-size: 1.5em;
 }
 #Tienda:hover>#tienda{
-    height: auto;
+    transform: scaleY(1);
+    transform-origin: top;
 }
 #tienda{
-    margin: 0;
-    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
     position: absolute;
     background-color: black;
     color: white;
