@@ -11,7 +11,7 @@ nav{
     height: 100px;
     position: relative;
 }
-nav ul{
+nav>ul{
     position: absolute;
     right:1%;
     top:40%;
@@ -19,16 +19,34 @@ nav ul{
     display: flex;
     justify-content: end;
 }
-nav li{
+nav>ul> li{
     display: inline-block;
     padding-right: 2%;
     font-size: 1.5em;
+}
+#Tienda:hover>#tienda{
+    height: auto;
+}
+#tienda{
+    margin: 0;
+    height: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#tienda>li>a{
+    color: #bbb;
+}
+#tienda li{
+    line-height: 1.5em;
 }
 li a{
     text-decoration: none;
     color: gray;
     position: relative;
-    overflow: hidden;
 }
 li a:hover{
     color: orangered;
@@ -212,7 +230,7 @@ article section::before{
     transition: 0.5s;
 }
 article section:hover::before{
-    height: 10%;
+    height: 2em;
 }
 /*categoria que está arriba izquierda*/
 article section::after{

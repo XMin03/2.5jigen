@@ -11,7 +11,7 @@ nav{
     height: 100px;
     position: relative;
 }
-ul{
+nav>ul{
     position: absolute;
     right:1%;
     top:40%;
@@ -19,16 +19,34 @@ ul{
     display: flex;
     justify-content: end;
 }
-li{
+nav>ul> li{
     display: inline-block;
     padding-right: 2%;
     font-size: 1.5em;
+}
+#Tienda:hover>#tienda{
+    height: auto;
+}
+#tienda{
+    margin: 0;
+    height: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#tienda>li>a{
+    color: #bbb;
+}
+#tienda li{
+    line-height: 1.5em;
 }
 li a{
     text-decoration: none;
     color: gray;
     position: relative;
-    overflow: hidden;
 }
 li a:hover{
     color: orangered;
