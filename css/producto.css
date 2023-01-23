@@ -1,36 +1,35 @@
 header{
     margin: 2% 8%;
     color: white;
-    position: relative;
-    -webkit-text-stroke: 1px orangered;
     font-size: 1.5em;
+    -webkit-text-stroke: 1px orangered;
 }
 main{
-    color: gray;
-    padding: 0 25% 0 30%;
     height: 550px;  
+    padding: 0 25% 0 30%;
+    color: gray;
 }
 img{
+    float: left;
     max-width: 500px;
     max-height: 500px;
-    float: left;
     padding-right: 20%;
 }
 #SKU{
-    font-size: 0.8em;
     padding: 1%;
+    font-size: 0.8em;
 }
 #precio{
     padding: 3%;
 }
 input{
-    margin-top: 2%;
-    background-color: orangered;
-    color: #222;
     width: 30%;
-    border: none;
-    text-align: center;
     height: 2em;
+    margin-top: 2%;
+    color: #222;
+    text-align: center;
+    background-color: orangered;
+    border: none;
 }
 input:hover{
     font-weight: bold;

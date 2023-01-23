@@ -1,19 +1,18 @@
 header{
+    position: relative;
     margin: 1% 8%;
     color: white;
-    position: relative;
-    -webkit-text-stroke: 1px orangered;
     font-size: 1.5em;
+    -webkit-text-stroke: 1px orangered;
 }
 main{
-    height:90vh;
     position: relative;
+    height:90vh;
 }
 /*filtro*/
 main h1{
-    color: orangered;
     padding: 1% 0 1% 2%;
-
+    color: orangered;
     font-size: 1.5em;
 }
 input[type="radio"],input[type="checkbox"] {
@@ -21,46 +20,46 @@ input[type="radio"],input[type="checkbox"] {
 }
 /*aside*/
 aside h2{
-    color: white;
+    width: 10%;
+    margin-left:2%;
     padding: 0.5% 2%;
+    color: white;
     font-size: 1.1em;
     border-top: white 1px solid;
-    margin-left:2%;
-    width: 10%;
 }
 /*label botón*/
 .filter{
     position: relative;
+    top: 4px;
     width: 2em;
     height: 1em;
-    top: 4px;
+    background-color: orangered;
     border-radius: 20px;
     transition: all 0.5s;
-    background-color: orangered;
 }
 .filter::after{
     content: '';
     position: absolute;
+    top: 0.05em;
+    left: 1.05em;
     width: 0.9em;
     height: 0.9em;
-    border-radius: 18px;
     background-color: #fff;
-    top: 1px;
-    left: 1em;
+    border-radius: 18px;
     transition: all 0.5s;
 }
 /*lista de filtro*/
 .list {
+    width: 10%;
+    margin-left:2%;
     padding-left: 4%;
     padding-bottom: 1%;
     text-align: left;
     border-bottom: white 1px solid;
-    margin-left:2%;
-    width: 10%;
 }
 label {
-    padding-top: 0.5%;
     display: inline-block;
+    padding-top: 0.5%;
     color: white;
     cursor: pointer;
 }
@@ -69,13 +68,13 @@ label:hover{
 }
 
 /*animacion de filtrar por*/
-[value="filter-category"]:checked ~ aside #category::after,
-[value="filter-estrella"]:checked ~ aside #estrella::after{
-   transform: translateX(-1em);
-}
 [value="filter-category"]:checked ~ aside #category,
 [value="filter-estrella"]:checked ~ aside #estrella{
     background-color: #bfbfbf;
+}
+[value="filter-category"]:checked ~ aside #category::after,
+[value="filter-estrella"]:checked ~ aside #estrella::after{
+   transform: translateX(-0.95em);
 }
 [value="filter-category"]:checked ~ aside #list-category,
 [value="filter-estrella"]:checked ~ aside #list-estrella{
@@ -111,24 +110,24 @@ label:hover{
 
 /*caja de productos*/
 article{
-    background-color: #2f2f2f;
     position: absolute;
     top: 0;
-    height:90vh;
     width: 60%;
+    height:90vh;
     margin: 0 20%;
+    background-color: #2f2f2f;
     overflow-y:scroll;
     scroll-snap-type: y mandatory;
 }
 /*todos los productos*/
 article section{
+    display: inline-block;
     position: relative;
-    margin:1%; 
     width: 240px;
     height: 400px;
-    border: orangered 1px solid;
-    display: inline-block;
+    margin:1%; 
     background-color: #0f0f0f;
+    border: orangered 1px solid;
 }
 article section img{
     width: 240px;
@@ -137,20 +136,19 @@ article section img{
 /*vista rapida*/
 article section::before{
     content: "vista rapida";
-    position: absolute;
-    color: #555;
-    bottom: 20%;
-    background-color: white;
-    opacity: 80%;
-    width: 100%;
-    height: 0%;
-    overflow: hidden;
-    font-size: 1.5em;
-    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    height: 0%;
+    color: #555;
+    font-size: 1.5em;
+    background-color: white;
+    opacity: 80%;
+    overflow: hidden;
     transition: 0.5s;
 }
 article section:hover::before{
@@ -159,37 +157,33 @@ article section:hover::before{
 /*categoria que está arriba izquierda*/
 article section::after{
     content:attr(category);
-    background-color: orangered;
     position: absolute;
     top: 0;
     left: 0;
-    color: white;
-    border-radius:25px;
-    font-size: 1.2em;
     padding:1%;
+    color: white;
+    font-size: 1.2em;
+    background-color: orangered;
+    border-radius:25px;
 }
 /*nombre del producto que está abajo la imagen*/
 .detalle{
     display: flex;
-    color:gray;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
-    padding-top: 5%;    
+    padding: 2.5%;
+    color:gray;
+    text-align: center;
 }
 /*linea y precio abajo de detalle*/
 .detalle::before{
     content:attr(precio);
+    display: flex;
+    justify-content: center;
     position:absolute;
+    bottom: -1em;
     width: 50%;
     border-top: white 1px solid;
-    bottom: -1.5em;
-    display: flex;
     color:gray;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
     text-align: center;
 }

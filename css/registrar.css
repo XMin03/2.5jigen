@@ -2,62 +2,41 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
+    color:white;
     background-color: black;
-    background-size: cover;
-    width: 100%;
-    color:white
 }
-
-#X {
-    text-align: right;
-    right: 3%;
-    top: 3%;
+#X{   
     position: absolute;
-}
-
-#X a {
-    font-size: 2em;
+    top: 3%;
+    right: 3%;
     color: gray;
-    text-decoration: none;
+    font-size: 2em;
 }
 main {
     width: 30%; 
-    text-align: center;
     margin: auto;
     margin-top: 15%;
+    text-align: center;
 }
-
 h1{
-    font-weight: 100;
     font-size: 3em;
+    font-weight: 100;
 }
 main p{
     padding: 5%;
 }
 p a{
     color: orangered;
-    text-decoration: none;
-}
-.registrar {
-    margin: auto;
-    width: 60%;
-    height: 2em;
-    margin-top: 3%;
-    padding: 2%;
-    box-sizing: border-box;
-    padding-bottom: 6%;
-    position: relative;
 }
 a{
     color: white;
     text-decoration: none;
 }
 .sesion{
-    margin: 1%;
     width: 50%;
     height: 2em;
+    margin: 1%;
     color: white;
     background-color: black;
     border: none;
@@ -65,15 +44,14 @@ a{
 }
 #registrar{
     width: 50%;
-    background-color: orangered;
-    border: none;
     margin: 1%;
     padding: 1%;
     color: white;
+    background-color: orangered;
+    border: none;
 }
 #olvidar{
     text-decoration:underline;
-
 }
 hr{
     margin: 2%;

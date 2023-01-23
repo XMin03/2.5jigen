@@ -1,31 +1,31 @@
 /*welcome*/
 h1{
-    font-size: 5em;
-    margin: auto;
     position: relative;
+    margin: auto;
+    font-size: 5em;
     text-align: center;
 }
 /*reccomended, thanks*/
 h2{
-    color: gray;
     padding:1% 10%;
+    color: gray;
 }
 /*gif*/
 header{
-    background-image: url("../img/charlotte-anime.gif");
-    background-size: cover;
     padding-top:35%;
     padding-bottom:5%;
+    background-image: url("../img/charlotte-anime.gif");
+    background-size: cover;
 }
 p{
-    margin: auto;
     position: relative;
     bottom:1%;
+    margin: auto;
     text-align: center;
 }
 
 /*section y flecha*/
-.section{
+section{
     position: relative;
 }
 .izquierda{
@@ -41,20 +41,20 @@ p{
     top:45%;
     right:1%;
     background-color: white;
-opacity: 80%;
+    opacity: 80%;
 }
 
 /*carrusel*/
 .carrusel{
     display: flex;
+    position: relative;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    position: relative;
 }
 /*section que contiene la img y .detalle*/
 .image, .game{
-    position: relative;
     margin:1%; 
+    cursor: pointer;
 }
 .image img{
     display: inline-block;
@@ -71,23 +71,21 @@ opacity: 80%;
 }
 /*muestra el nombre al poner cursor arriba*/
 .detalle{
-    height: 25%;
-    width: 90%;
-    background-color: black;
-    color:gray;
-    opacity: 0%;
-    bottom:1%;
     position: absolute;
-    vertical-align: bottom;
-    transition: 0.5s;
+    bottom:1%;
+    width: 90%;
+    height: 25%;
     padding-top: 100%;
-    text-align: left;
     padding-left: 10%;
+    color:gray;
+    text-align: left;
+    background-color: black;
+    opacity: 0%;
+    transition: 0.4s;
 }
 section:hover > .detalle{
     opacity: 80%;
 }
-
 /*section para pelicula*/
 #film{
     position: relative;
@@ -97,13 +95,13 @@ section:hover > .detalle{
 }
 #film a{
     position: absolute;
-    width: 100%;
-    bottom:30%;
     left:0;
-    text-align: center;
-    font-size: 3em;
-    color: white;
+    bottom:30%;
+    width: 100%;
     padding: 0;
+    color: white;
+    font-size: 3em;
+    text-align: center;
 }
 #film a:hover{
     color:orangered;

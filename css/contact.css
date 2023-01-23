@@ -1,21 +1,19 @@
 header{
-    border-left: white 1px solid;
     width: 30%;
     position: relative;
     left:10%;
-    padding-bottom: 2%;
     margin-bottom: 8%;
+    padding-bottom: 2%;
+    border-left: white 1px solid;
 }
 h1{
-    color:white;
-    font-size: 4em;
-    text-align: left;
     padding-left: 5%;
     padding-bottom: 5%;
+    color:white;
+    font-size: 4em;
 }
 p{
-    text-align: left;
+    padding-left: 5%;
     color:gray;
     font-size: 1em;
-    padding-left: 5%;
 }
