@@ -1,78 +1,3 @@
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    background-color: black;
-    min-width: 700px;
-}
-/*menu*/
-nav{
-    height: 100px;
-    position: relative;
-}
-nav>ul{
-    position: absolute;
-    right:1%;
-    top:40%;
-    width: 80%;
-    display: flex;
-    justify-content: end;
-}
-nav>ul> li{
-    display: inline-block;
-    padding-right: 2%;
-    font-size: 1.5em;
-}
-#Tienda:hover>#tienda{
-    transform: scaleY(1);
-    transform-origin: top;
-}
-#tienda{
-    transform: scaleY(0);
-    transform-origin: top;
-    position: absolute;
-    background-color: black;
-    color: white;
-    font-size: 0.8em;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-#tienda>li>a{
-    color: #bbb;
-}
-#tienda li{
-    line-height: 1.5em;
-}
-li a{
-    text-decoration: none;
-    color: gray;
-    position: relative;
-}
-li a:hover{
-    color: orangered;
-}
-li a::after{
-    content: '';
-    height: 0.1em;
-    background-color: orangered;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-out;
-    transform-origin: right;
-}
-li a:hover::after{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-/*logo*/
-nav img{
-    width: 100px;
-    padding-left: 5%;
-}
 header{
     margin: 1% 8%;
     color: white;
@@ -94,6 +19,7 @@ main h1{
 input[type="radio"],input[type="checkbox"] {
     display: none;
 }
+/*aside*/
 aside h2{
     color: white;
     padding: 0.5% 2%;
@@ -102,20 +28,17 @@ aside h2{
     margin-left:2%;
     width: 10%;
 }
+/*label botón*/
 .filter{
     position: relative;
-    display: inline-block;
     width: 2em;
     height: 1em;
     top: 4px;
     border-radius: 20px;
     transition: all 0.5s;
-}
-#category,#estrella{
     background-color: orangered;
-    
 }
-#category::after,#estrella::after{
+.filter::after{
     content: '';
     position: absolute;
     width: 0.9em;
@@ -126,7 +49,8 @@ aside h2{
     left: 1em;
     transition: all 0.5s;
 }
-aside .list {
+/*lista de filtro*/
+.list {
     padding-left: 4%;
     padding-bottom: 1%;
     text-align: left;
@@ -144,17 +68,20 @@ label:hover{
     color: gray;
 }
 
-
-/* Estilos cuando un radio esta seleccionado
- --------------------------------------------------*/
-[value="category"]:checked ~ aside #category::after,
-[value="estrella"]:checked ~ aside #estrella::after{
+/*animacion de filtrar por*/
+[value="filter-category"]:checked ~ aside #category::after,
+[value="filter-estrella"]:checked ~ aside #estrella::after{
    transform: translateX(-1em);
 }
-[value="category"]:checked ~ aside #category,
-[value="estrella"]:checked ~ aside #estrella{
+[value="filter-category"]:checked ~ aside #category,
+[value="filter-estrella"]:checked ~ aside #estrella{
     background-color: #bfbfbf;
- }
+}
+[value="filter-category"]:checked ~ aside #list-category,
+[value="filter-estrella"]:checked ~ aside #list-estrella{
+    display: none;
+}
+/*animacion de los filtro*/
 [value="all-category"]:checked ~ aside #list-category label[for="all-category"],
 [value="anime"]:checked ~ aside #list-category label[for="anime"], 
 [value="manga"]:checked ~ aside #list-category label[for="manga"], 
@@ -169,10 +96,7 @@ label:hover{
     color: orangered;
 }
 
-/* Filtramos las clases mediante el selector ~
---------------------------------------------------*/
-[value="category"]:checked ~ aside #list-category,
-[value="estrella"]:checked ~ aside #list-estrella,
+/* Filtramos las clases mediante el selector  ~*/
 [value="anime"]:checked ~ article section:not([category="anime"]),
 [value="manga"]:checked ~ article section:not([category="manga"]),
 [value="novel"]:checked ~ article section:not([category="novel"]),
@@ -184,7 +108,6 @@ label:hover{
 [value="estrella4"]:checked ~ article section:not([estrella="4"]){
     display: none;
 }
-
 
 /*caja de productos*/
 article{
@@ -269,56 +192,4 @@ article section::after{
     align-self: center;
     align-content: center;
     text-align: center;
-}
-/*pie de pagina*/
-footer{
-    width: 50%;
-    position: relative;
-    left:10%;
-    padding-bottom: 10%;
-}
-#pie{
-    margin-top: 5%;
-    border-left: white 1px solid;
-    padding: 3% 0%;;
-}
-#pie h2{
-    color:white;
-    font-size: 4em;
-    text-align: left;
-    padding-left: 5%;
-}
-#pie p{
-    text-align: left;
-    color:white;
-    font-size: 2em;
-    padding-left: 10%;
-}
-/*formulario en el pie de pagina*/
-form{
-    padding-top:5%;
-    padding-left: 3%;
-}
-#text{
-    background-color: black;
-    border: white 1px solid;
-    color: gray;
-    padding-left: 1%;
-    font-size: 2em;
-    height: 1.5em;
-    width: 60%;
-    margin-right:1%;
-    box-sizing: border-box;
-}
-#submit{    
-    background-color: black;
-    border: orangered 1px solid;
-    color: orangered;
-    font-size: 2em;
-    height: 1.5em;
-    width: 15%;
-    box-sizing: border-box;
-}
-#submit:hover{
-    font-weight: bolder;
 }

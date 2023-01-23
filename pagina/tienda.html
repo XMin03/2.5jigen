@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="stylesheet" href="../css/menu_footer.css">
     <title>Tienda</title>
 </head>
 <body>
@@ -31,14 +32,14 @@
     <main>
         <h1>Filtrar por</h1>
         <!-- Inputs de las Categorias -->
-        <input name="category" value="category" id="category" type="checkbox">
+        <input name="filter-checkbox" value="filter-category" id="filter-category" type="checkbox">
             <input name="category" value="all-category" id="all-category" type="radio" checked>
             <input name="category" value="anime" id="anime" type="radio">
             <input name="category" value="manga" id="manga" type="radio">
             <input name="category" value="novel" id="novel" type="radio">
             <input name="category" value="game" id="game" type="radio">
 
-        <input name="category" value="estrella" id="estrella" type="checkbox">
+        <input name="filter-checkbox" value="filter-estrella" id="filter-estrella" type="checkbox">
             <input name="estrella" value="none" id="none" type="radio" checked>
             <input name="estrella" value="estrella0" id="estrella0" type="radio">
             <input name="estrella" value="estrella1" id="estrella1" type="radio">
@@ -47,7 +48,7 @@
             <input name="estrella" value="estrella4" id="estrella4" type="radio">
 
         <aside>
-            <h2><label for="category" id="category" class="filter"></label>Categoria</h2>
+            <h2><label for="filter-category" id="category" class="filter"></label>Categoria</h2>
             <ul id="list-category" class="list">
                 <li><label for="all-category">Todos</label></li>
                 <li><label for="anime">anime</label></li>
@@ -55,7 +56,7 @@
                 <li><label for="novel">novel</label></li>
                 <li><label for="game">game</label></li>
             </ul>  
-            <h2><label for="estrella" id="estrella" class="filter"></label>Valutacion</h2>
+            <h2><label for="filter-estrella" id="estrella" class="filter"></label>Valutacion</h2>
             <ul id="list-estrella" class="list">
                 <li><label for="none">none</label></li>
                 <li><label for="estrella0">0-1</label></li>
