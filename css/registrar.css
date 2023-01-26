@@ -6,6 +6,10 @@ body {
     color:white;
     background-color: black;
 }
+a{
+    color: orangered;
+    text-decoration: none;
+}
 #X{   
     position: absolute;
     top: 3%;
@@ -19,19 +23,12 @@ main {
     margin-top: 15%;
     text-align: center;
 }
-h1{
+header>h1{
     font-size: 3em;
     font-weight: 100;
 }
-main p{
+aside{
     padding: 5%;
-}
-p a{
-    color: orangered;
-}
-a{
-    color: white;
-    text-decoration: none;
 }
 .sesion{
     width: 50%;
@@ -50,13 +47,14 @@ a{
     background-color: orangered;
     border: none;
 }
-#olvidar{
+article a{
+    color: white;
     text-decoration:underline;
 }
 hr{
     margin: 2%;
 }
-img {
+footer img {
     width: 7%;
     padding: 1%;
 }
