@@ -6,6 +6,12 @@ body{
     min-width: 700px;
     background-color: black;
 }
+audio{
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 2;
+}
 /*menu*/
 nav{
     position: relative;
@@ -53,9 +59,10 @@ nav>ul> li{
     background-color: orangered;
 }
 /* para que no salga la linea abajo del menu */
-#tienda a:hover{
+#tienda a:after{
     display: none;
 }
+
 /*enlaces del menu*/
 li a{
     position: relative;
