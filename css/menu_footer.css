@@ -31,7 +31,7 @@ nav>ul> li{
     font-size: 1.5em;
 }
 /* submenu de tienda*/
-#tienda{
+#submenu{
     position: absolute;
     padding: 0;
     color: white;
@@ -42,24 +42,24 @@ nav>ul> li{
     transition: all 0.5s;
     overflow: hidden;
 }
-#tienda li{
+#submenu li{
     padding-left: 1.5em;
     line-height: 1.5em;
 }
-#tienda a{
+#submenu a{
     color: #bbb;
 }
-#Tienda:hover>#tienda{
+#Tienda:hover>#submenu{
     transform: scaleY(1);
     transform-origin: top;
     /* necesario para la pagina tienda y producto por tener un header */
     z-index: 1;
 }
-#tienda li:hover{
+#submenu li:hover{
     background-color: orangered;
 }
 /* para que no salga la linea abajo del menu */
-#tienda a:after{
+#submenu a:after{
     display: none;
 }
 
