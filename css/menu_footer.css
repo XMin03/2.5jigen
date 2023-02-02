@@ -31,12 +31,6 @@ nav>ul> li{
     font-size: 1.5em;
 }
 /* submenu de tienda*/
-#Tienda:hover>#tienda{
-    transform: scaleY(1);
-    transform-origin: top;
-    /* necesario para la pagina tienda y producto por tener un header */
-    z-index: 1;
-}
 #tienda{
     position: absolute;
     padding: 0;
@@ -52,8 +46,14 @@ nav>ul> li{
     padding-left: 1.5em;
     line-height: 1.5em;
 }
-#tienda>li>a{
+#tienda a{
     color: #bbb;
+}
+#Tienda:hover>#tienda{
+    transform: scaleY(1);
+    transform-origin: top;
+    /* necesario para la pagina tienda y producto por tener un header */
+    z-index: 1;
 }
 #tienda li:hover{
     background-color: orangered;
