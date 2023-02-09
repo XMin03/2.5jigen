@@ -5,6 +5,10 @@
 body {
     color:white;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
 }
 a{
     color: orangered;
@@ -18,9 +22,7 @@ a{
     font-size: 2em;
 }
 main {
-    width: 30%; 
-    margin: auto;
-    margin-top: 15%;
+    width: 500px; 
     text-align: center;
 }
 header>h1{

@@ -11,10 +11,10 @@ audio{
     bottom: 1%;
     z-index: 3;
 }
-input[type=checkbox]{
+nav>input[type=checkbox]{
     display: none;
 }
-label{
+nav>label{
     display: none;
 }
 nav>label>img{
@@ -182,7 +182,7 @@ form{
         padding-top:2%;
     }
     #text,#submit{
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     
 }
@@ -203,7 +203,7 @@ form{
     #submenu{
        display: none;
     }
-    label{
+    nav>label{
         display: block;
         z-index: 3;
         margin: 1%;
@@ -217,16 +217,15 @@ form{
     }
     nav>ul{
         display: none;
-        position: fixed;
+        position: absolute;
         top: 0px;
         right: 0;
         width: 30%;
-        height: 100vh;
         padding: 0;
         font-size: 1.5em;
         padding-top: 70px;
-        padding-left: 5%;
-        line-height: 2;
+        padding-left: 3%;
+        padding-right: 3%;
         text-align: center;
         background-color: black;
         z-index: 2;
@@ -235,8 +234,19 @@ form{
     nav>ul>li{
         display: block;
         font-size: 1em;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     [value=menu]:checked ~ ul{
         display: block
+    }
+    #pie h2{
+        font-size: 1.5em;
+    }
+    #pie p{
+        font-size: 1.2em;
+    }
+    #text,#submit{
+        font-size: 1.4em;
     }
 }

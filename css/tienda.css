@@ -187,3 +187,74 @@ article section::after{
     color:gray;
     text-align: center;
 }
+@media (max-width:1300px){
+    h1{
+        font-size: 1.2em;
+    }
+    main h1{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: .7em;
+    }
+    aside h2{
+        font-size: 1em
+    }
+    aside ul{
+        font-size: 0.8em;
+    }
+    article{
+        width: 70%;
+    }
+    article section{
+        width: 180px;
+        height: 300px;
+    }
+    article section img{
+        width: 180px;
+        height: 240px;
+    }
+    article section::before{
+        font-size: 1.2em;
+    }
+    article section::after{
+        font-size: 1em;
+    }
+}
+@media (max-width:850px){
+    h1{
+        font-size: 1em;
+    }
+    main h1{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: .6em;
+    }
+    article{
+        width: 75%;
+    }
+    aside h2{
+        font-size: 0.8em
+    }
+    aside ul{
+        font-size: 0.6em;
+    }
+    article section{
+        width: 150px;
+        height: 250px;
+    }
+    article section img{
+        width: 150px;
+        height: 200px;
+    }
+    article section::before{
+        font-size: 1em;
+    }
+    article section::after{
+        font-size: 0.8em;
+    }
+}

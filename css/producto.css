@@ -5,15 +5,15 @@ header{
     -webkit-text-stroke: 1px orangered;
 }
 main{
-    height: 550px;  
-    padding: 0 25% 0 30%;
+    height: 500px;  
+    padding-left: 20%;
     color: gray;
 }
 img{
     float: left;
     max-width: 500px;
     max-height: 500px;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 #SKU{
     padding: 1%;
@@ -33,4 +33,35 @@ input{
 }
 input:hover{
     font-weight: bold;
+}
+@media (max-width:808px){
+    main{
+        height: 300px;
+        padding-left: 10%;
+    }
+    img{
+        max-width: 300px;
+        max-height: 300px;
+        padding-right: 5%;
+    }
+    header{
+        font-size: 0.8em;
+    }
+    main>h1{
+        font-size: 1em;
+    }
+    #SKU{
+        font-size: 0.7em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    }
+@media (max-width:570px){
+    #SKU{
+        font-size: 0.6em;
+    }
+    p{
+        font-size: 0.7em;
+    }
 }

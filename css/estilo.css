@@ -5,7 +5,7 @@ h1{
     font-size: 5em;
     text-align: center;
 }
-/*reccomended, thanks*/
+/*reccomended*/
 h2{
     padding:1% 10%;
     color: gray;
@@ -74,7 +74,7 @@ section{
     position: absolute;
     bottom:1%;
     width: 90%;
-    height: 25%;
+    height: 30%;
     padding-top: 100%;
     padding-left: 10%;
     color:gray;
@@ -105,4 +105,52 @@ section:hover > .detalle{
 }
 #film a:hover{
     color:orangered;
+}
+@media (max-width:750px){
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: .8em;
+    }
+    .image img{
+        display: inline-block;
+        width: 180px;
+        height: 240px;
+        scroll-snap-align: center;
+    }
+    /*como image pero con otro formato*/
+    .game img{
+        width: 240px;
+        height: 240px;
+    }
+    #film a{
+        font-size: 1.8em;
+    }
+}
+@media (max-width:570px){
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: .6em;
+    }
+    .image img{
+        width: 150px;
+        height: 200px;
+    }
+    /*como image pero con otro formato*/
+    .game img{        
+        width: 200px;
+        height: 200px;
+    }
+    #film a{
+        font-size: 1.5em;
+    }
 }
