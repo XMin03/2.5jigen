@@ -216,20 +216,19 @@ form{
         height: 70px;
     }
     nav>ul{
-        display: none;
+        display: block;
         position: absolute;
-        top: 0px;
+        top: 70px;
         right: 0;
-        width: 30%;
+        width: auto;
         padding: 0;
         font-size: 1.5em;
-        padding-top: 70px;
-        padding-left: 3%;
-        padding-right: 3%;
         text-align: center;
         background-color: black;
         z-index: 2;
         transition: all 0.5s;
+        transform: scaleY(0);
+        transform-origin: top;
     }
     nav>ul>li{
         display: block;
@@ -238,7 +237,8 @@ form{
         padding-bottom: 5%;
     }
     [value=menu]:checked ~ ul{
-        display: block
+        transform: scaleY(1);
+        transform-origin: top;
     }
     #pie h2{
         font-size: 1.5em;
