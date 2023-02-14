@@ -52,6 +52,7 @@ nav>ul> li{
 }
 #submenu li{
     padding-left: 1.5em;
+    padding-right: 0.5em;
     line-height: 1.5em;
 }
 #submenu a{
