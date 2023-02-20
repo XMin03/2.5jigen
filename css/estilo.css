@@ -65,8 +65,8 @@ section{
 }
 /*como image pero con otro formato*/
 .game img{
-    width: var(--ancho/3*4);
-    height: var(--ancho/3*4);
+    width: calc(var(--ancho)/3*4);
+    height: calc(var(--ancho)/3*4);
 }
 /*muestra el nombre al poner cursor arriba*/
 .detalle{
@@ -137,5 +137,10 @@ section:hover > .detalle{
     }
     #film a{
         font-size: 1.5em;
+    }
+}
+@media (max-width:570px){
+    .image,.game{
+        --ancho:50vw;
     }
 }
