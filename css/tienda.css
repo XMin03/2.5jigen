@@ -140,7 +140,6 @@ article section::before{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     position: absolute;
     bottom: 20%;
     width: 100%;
