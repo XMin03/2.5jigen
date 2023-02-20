@@ -91,7 +91,7 @@ li>a::after{
     background-color: orangered;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s;
 }
 li a:hover::after{
     transform: scaleX(1);
@@ -239,7 +239,6 @@ form{
     }
     [value=menu]:checked ~ ul{
         transform: scaleY(1);
-        transform-origin: top;
     }
     #pie h2{
         font-size: 1.5em;
