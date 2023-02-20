@@ -55,19 +55,18 @@ section{
 .image, .game{
     margin:1%; 
     cursor: pointer;
+    display: inline-block;
+    scroll-snap-align: center;
+    --ancho:300px;
 }
 .image img{
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    scroll-snap-align: center;
+    width: var(--ancho);
+    height: calc(var(--ancho)/3*4);
 }
 /*como image pero con otro formato*/
 .game img{
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    scroll-snap-align: center;
+    width: var(--ancho/3*4);
+    height: var(--ancho/3*4);
 }
 /*muestra el nombre al poner cursor arriba*/
 .detalle{
@@ -106,7 +105,7 @@ section:hover > .detalle{
 #film a:hover{
     color:orangered;
 }
-@media (max-width:750px){
+@media (max-width:1300px){
     h1{
         font-size: 3em;
     }
@@ -116,22 +115,14 @@ section:hover > .detalle{
     p{
         font-size: .8em;
     }
-    .image img{
-        display: inline-block;
-        width: 180px;
-        height: 240px;
-        scroll-snap-align: center;
-    }
-    /*como image pero con otro formato*/
-    .game img{
-        width: 240px;
-        height: 240px;
+    .image,.game{
+        --ancho:240px;
     }
     #film a{
         font-size: 1.8em;
     }
 }
-@media (max-width:570px){
+@media (max-width:1000px){
     h1{
         font-size: 2em;
     }
@@ -141,14 +132,8 @@ section:hover > .detalle{
     p{
         font-size: .6em;
     }
-    .image img{
-        width: 150px;
-        height: 200px;
-    }
-    /*como image pero con otro formato*/
-    .game img{        
-        width: 200px;
-        height: 200px;
+    .image,.game{
+        --ancho:200px;
     }
     #film a{
         font-size: 1.5em;

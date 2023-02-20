@@ -121,17 +121,18 @@ article{
 }
 /*todos los productos*/
 article section{
+    --ancho:240px;
     display: inline-block;
     position: relative;
-    width: 240px;
-    height: 400px;
+    width: var(--ancho);
+    height: calc(var(--ancho)/3*5);
     margin:1%; 
     background-color: #0f0f0f;
     border: orangered 1px solid;
 }
 article section img{
-    width: 240px;
-    height: 320px;
+    width: var(--ancho);
+    height: calc(var(--ancho)/3*4);
 }
 /*vista rapida*/
 article section::before{
@@ -207,12 +208,7 @@ article section::after{
         width: 70%;
     }
     article section{
-        width: 180px;
-        height: 300px;
-    }
-    article section img{
-        width: 180px;
-        height: 240px;
+        --ancho:180px
     }
     article section::before{
         font-size: 1.2em;
@@ -244,12 +240,7 @@ article section::after{
         font-size: 0.6em;
     }
     article section{
-        width: 150px;
-        height: 250px;
-    }
-    article section img{
-        width: 150px;
-        height: 200px;
+        --ancho:150px;
     }
     article section::before{
         font-size: 1em;
