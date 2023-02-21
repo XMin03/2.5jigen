@@ -142,5 +142,6 @@ section:hover > .detalle{
 @media (max-width:570px){
     .image,.game{
         --ancho:50vw;
+        scroll-snap-align: start;
     }
 }
