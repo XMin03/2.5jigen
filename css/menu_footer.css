@@ -231,14 +231,14 @@ form{
         transform: scaleY(0);
         transform-origin: top;
     }
+    [value=menu]:checked ~ ul{
+        transform: scaleY(1);
+    }
     nav>ul>li{
         display: block;
         font-size: 1em;
         padding-top: 5%;
         padding-bottom: 5%;
-    }
-    [value=menu]:checked ~ ul{
-        transform: scaleY(1);
     }
     #pie h2{
         font-size: 1.5em;
