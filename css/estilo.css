@@ -53,7 +53,7 @@ section{
 }
 /*section que contiene la img y .detalle*/
 .image, .game{
-    margin:1%; 
+    padding:1%; 
     cursor: pointer;
     display: inline-block;
     scroll-snap-align: center;
@@ -141,7 +141,7 @@ section:hover > .detalle{
 }
 @media (max-width:570px){
     .image,.game{
-        --ancho:50vw;
+        --ancho:48vw;
         scroll-snap-align: start;
     }
 }
