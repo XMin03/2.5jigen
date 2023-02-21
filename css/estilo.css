@@ -71,11 +71,11 @@ section{
 /*muestra el nombre al poner cursor arriba*/
 .detalle{
     position: absolute;
-    bottom:1%;
-    width: 90%;
+    width: 80%;
     height: 30%;
     padding-top: 100%;
     padding-left: 10%;
+    padding-right: 10%;
     color:gray;
     text-align: left;
     background-color: black;
@@ -142,6 +142,6 @@ section:hover > .detalle{
 @media (max-width:570px){
     .image,.game{
         --ancho:48vw;
-        scroll-snap-align: start;
+        scroll-snap-align: end;
     }
 }
