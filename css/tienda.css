@@ -241,7 +241,7 @@ article section::after{
         font-size: 0.6em;
     }
     article section{
-        --ancho:150px;
+        --ancho:120px;
     }
     article section::before{
         font-size: 1em;
