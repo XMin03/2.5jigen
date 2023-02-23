@@ -58,6 +58,9 @@ input:hover{
     }
     }
 @media (max-width:570px){
+    main{
+        width: 80%;
+    }
     header{
         -webkit-text-stroke: 0px orangered;
     }
