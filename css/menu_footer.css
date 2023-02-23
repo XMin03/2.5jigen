@@ -106,7 +106,7 @@ nav img{
 /*pie de pagina*/
 footer{
     padding-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 #pie{
     width: 70%;
@@ -128,7 +128,7 @@ footer{
 }
 /*formulario en el pie de pagina*/
 form{
-    padding-top:5%;
+    padding-top:3%;
     padding-left: 3%;
 }
 #text{
@@ -239,6 +239,9 @@ form{
         font-size: 1em;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+    form{
+        padding-left: 0;
     }
     #pie h2{
         font-size: 1.5em;
