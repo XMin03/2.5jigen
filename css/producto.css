@@ -23,7 +23,7 @@ img{
     padding: 3%;
 }
 input{
-    width: 30%;
+    width: 8em;
     height: 2em;
     margin-top: 2%;
     color: #222;
@@ -58,10 +58,17 @@ input:hover{
     }
     }
 @media (max-width:570px){
+    header{
+        -webkit-text-stroke: 0px orangered;
+    }
     #SKU{
         font-size: 0.6em;
     }
     p{
         font-size: 0.6em;
+    }
+    input{
+        width: 8em;
+        height: 2em;
     }
 }
