@@ -280,7 +280,7 @@ article section::after{
         font-size: 0.6em;
     }
     article section{
-        --ancho:20vw;
+        --ancho:10vw;
     }
     article section::before{
         font-size: 1em;
