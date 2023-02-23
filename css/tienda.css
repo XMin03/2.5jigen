@@ -113,7 +113,7 @@ article{
     position: absolute;
     top: 0;
     width: 60%;
-    height:75vh;
+    height:90vh;
     margin: 0 20%;
     background-color: #2f2f2f;
     overflow-y:scroll;
@@ -229,6 +229,39 @@ article section::after{
         font-size: 0.8em;
     }
     p{
+        font-size: .6em;
+    }
+    article{
+        width: 75%;
+    }
+    aside h2{
+        font-size: 0.8em
+    }
+    aside ul{
+        font-size: 0.6em;
+    }
+    article section{
+        --ancho:180px;
+    }
+    article section::before{
+        font-size: 1em;
+    }
+    article section::after{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:570px){
+    header{
+        font-size: 1em;
+        -webkit-text-stroke: 0px orangered;
+    }
+    main h1{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
         font-size: .5em;
     }
     article{
@@ -247,7 +280,7 @@ article section::after{
         font-size: 0.6em;
     }
     article section{
-        --ancho:35vw;
+        --ancho:34vw;
     }
     article section::before{
         font-size: 1em;
