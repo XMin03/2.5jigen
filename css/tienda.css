@@ -226,13 +226,19 @@ article section::after{
         font-size: 1em;
     }
     h2{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
     p{
         font-size: .5em;
     }
     article{
         width: 75%;
+    }
+    aside{
+        width: 25vh;
+    }
+    main>h1{
+        font-size: 0.8em;
     }
     aside h2{
         font-size: 0.6em
@@ -241,7 +247,7 @@ article section::after{
         font-size: 0.6em;
     }
     article section{
-        --ancho:120px;
+        --ancho:35vw;
     }
     article section::before{
         font-size: 1em;
