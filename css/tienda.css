@@ -121,8 +121,7 @@ article{
 }
 /*todos los productos*/
 article section{
-    --ancho:240px;
-    display: inline-block;
+    --ancho:240px;display: inline-block;
     position: relative;
     width: var(--ancho);
     height: calc(var(--ancho)/3*5);
@@ -263,7 +262,7 @@ article section::after{
         font-size: 0.8em;
     }
     p{
-        font-size: .4em;
+        font-size: .5em;
     }
     main>h1{
         font-size: 0.8em;
