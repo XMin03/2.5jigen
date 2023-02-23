@@ -226,7 +226,7 @@ article section::after{
         font-size: 1em;
     }
     h2{
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     p{
         font-size: .5em;
@@ -235,7 +235,7 @@ article section::after{
         width: 75%;
     }
     aside h2{
-        font-size: 0.7em
+        font-size: 0.6em
     }
     aside ul{
         font-size: 0.6em;
