@@ -7,7 +7,7 @@ header{
 }
 main{
     position: relative;
-    height:90vh;
+    height:80vh;
 }
 /*filtro*/
 main h1{
@@ -113,7 +113,7 @@ article{
     position: absolute;
     top: 0;
     width: 60%;
-    height:90vh;
+    height:80vh;
     margin: 0 20%;
     background-color: #2f2f2f;
     overflow-y:scroll;
@@ -231,14 +231,15 @@ article section::after{
     p{
         font-size: .6em;
     }
-    article{
-        width: 75vw;
-    }
     aside h2{
         font-size: 0.8em
     }
     aside ul{
         font-size: 0.6em;
+    }
+    article{
+        width: 75vw;
+        margin-right: 0;
     }
     article section{
         --ancho:180px;
