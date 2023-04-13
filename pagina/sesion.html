@@ -14,8 +14,8 @@
         <aside><p>¿Eres nuevo en este sitio? <a href="registrar.html">Registrate</a></p></aside>
         <article>
             <form action="">
-                <input class="sesion" type="text" placeholder="email" name="email" required><br>
-                <input class="sesion" type="password" placeholder="password" name="password" required><br>
+                <input class="sesion" type="text" placeholder="email" name="email" pattern="^[\w_.-]+@[\w_.-]+\.[a-z]{2,4}$" required><br>
+                <input class="sesion" type="password" placeholder="password" name="password" pattern="^(?=.*\d.*\d.*\d)(?=.*[A-Z].*[A-Z])(?=.*\w).{6,18}$" required><br>
                 <input id="registrar" type="submit" value="Iniciar sesion">
             </form>
         <a href="">¿Olvidaste la contraseña?</a>
