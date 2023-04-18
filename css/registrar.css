@@ -49,6 +49,9 @@ aside{
     background-color: orangered;
     border: none;
 }
+article span a{
+    color: orangered;
+}
 article a{
     color: white;
     text-decoration:underline;
