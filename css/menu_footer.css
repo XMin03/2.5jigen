@@ -141,6 +141,7 @@ form{
     font-size: 2em;
     background-color: black;
     border: white 1px solid;
+    resize: vertical;
 }
 #submit{
     float: right;
