@@ -48,23 +48,27 @@
             <input name="estrella" value="estrella4" id="estrella4" type="radio">
 
         <aside>
-            <h2><label for="filter-category" id="category" class="filter"></label>Categoria</h2>
-            <ul id="list-category" class="list">
-                <li><label for="all-category">Todos</label></li>
-                <li><label for="anime">anime</label></li>
-                <li><label for="manga">manga</label></li>
-                <li><label for="novel">novel</label></li>
-                <li><label for="game">game</label></li>
-            </ul>  
-            <h2><label for="filter-estrella" id="estrella" class="filter"></label>Valutacion</h2>
-            <ul id="list-estrella" class="list">
-                <li><label for="none">none</label></li>
-                <li><label for="estrella0">0-1</label></li>
-                <li><label for="estrella1">1-2</label></li>
-                <li><label for="estrella2">2-3</label></li>
-                <li><label for="estrella3">3-4</label></li>
-                <li><label for="estrella4">4-5</label></li>
-            </ul>  
+            <section>
+                <h2><label for="filter-category" id="category" class="filter"></label>Categoria</h2>
+                <ul id="list-category" class="list">
+                    <li><label for="all-category">Todos</label></li>
+                    <li><label for="anime">anime</label></li>
+                    <li><label for="manga">manga</label></li>
+                    <li><label for="novel">novel</label></li>
+                    <li><label for="game">game</label></li>
+                </ul>  
+            </section>
+            <section>
+                <h2><label for="filter-estrella" id="estrella" class="filter"></label>Valoracion</h2>
+                <ul id="list-estrella" class="list">
+                    <li><label for="none">none</label></li>
+                    <li><label for="estrella0">0-1</label></li>
+                    <li><label for="estrella1">1-2</label></li>
+                    <li><label for="estrella2">2-3</label></li>
+                    <li><label for="estrella3">3-4</label></li>
+                    <li><label for="estrella4">4-5</label></li>
+                </ul>  
+            </section>
         </aside>  
         <article id="contenido">
             <a href="producto.html"><section estrella="4" category="anime"><img src="../img/anohana.jpg"><p class="detalle" precio="0.10€">Ano Hi Mita Hana no Namae o Bokutachi wa Mada Shiranai</p></section></a>
@@ -102,7 +106,7 @@
             <p>See you next time XD</p>
         </section>
         <form action="">
-            <textarea name="nombre" id="text" placeholder="Deja un comentario aqui" rows="10" required></textarea>
+            <textarea name="nombre" id="text" placeholder="Deja un comentario aqui" rows="3" required></textarea>
             <input id="submit" type="submit" value="Enviar">
         </form>
     </footer>
