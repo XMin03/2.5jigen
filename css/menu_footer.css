@@ -99,20 +99,38 @@ li a:hover::after{
 }
 /*logo*/
 nav img{
+    --fin:30px;
     width: 100px;
+    position: relative;
     padding-left: 5%;
-    padding-top: 30px;
-    animation: prueba 6s;
+    top: -60px;
+    animation: drop 1s 0.5s ease-out forwards;
 }
-@keyframes prueba {
+/* queria hacer algo mas cumplicado pero no salia y se atasca bastante*/
+@keyframes drop {
     0%{
-        transform-origin:center left;
-        transform: scaleY(0.5) rotatey(90deg);
-    }25%{
-        transform: scaleY(1)
+        top: -60px;
+        animation-timing-function: ease-in;
+    }20%{
+        top: var(--fin);
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-in;
+    }40%{
+        top: calc(var(--fin)/3*2);
+        transform: rotateZ(-5deg);
+        animation-timing-function: ease-in;
+    }60%{
+        top: var(--fin);
+        transform: rotateZ(4deg);
+        animation-timing-function: ease-in;
+    }80%{
+        top: calc(var(--fin)/6*5);
+        transform: rotateZ(-1deg);
+        animation-timing-function: ease-in;
     }100%{
-        transform: rotatey(0deg);
-        padding-left: 5%;
+        top: var(--fin);
+        transform: rotateZ(0deg);
+        animation-timing-function: ease-in;
     }
 }
 /*pie de pagina*/
@@ -181,7 +199,7 @@ form{
     }
     /*logo*/
     nav img{
-        padding-top: 20px;
+        --fin:20px;
         padding-left: 3%;
     }
     nav>ul> li{
