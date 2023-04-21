@@ -113,24 +113,24 @@ nav img{
         animation-timing-function: ease-in;
     }20%{
         top: var(--fin);
-        transform: rotateZ(5deg);
-        animation-timing-function: ease-in;
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
     }40%{
         top: calc(var(--fin)/3*2);
-        transform: rotateZ(-10deg);
+        transform: rotateZ(-5deg);
         animation-timing-function: ease-in;
     }60%{
         top: var(--fin);
         transform: rotateZ(3deg);
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
     }80%{
         top: calc(var(--fin)/6*5);
-        transform: rotateZ(-6deg);
+        transform: rotateZ(-1deg);
         animation-timing-function: ease-in;
     }100%{
         top: var(--fin);
         transform: rotateZ(0deg);
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
     }
 }
 /*pie de pagina*/
