@@ -35,6 +35,7 @@ section{
     background-color: white;
     opacity: 80%;
     z-index: 1;
+    cursor: pointer;
 }
 .derecha{
     position: absolute;
@@ -42,6 +43,7 @@ section{
     right:1%;
     background-color: white;
     opacity: 80%;
+    cursor: pointer;
 }
 /*carrusel*/
 .carrusel{
