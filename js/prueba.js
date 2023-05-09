@@ -10,3 +10,5 @@ var objJSON=JSON.parse(cadena);
 console.log(objJSON);
 console.log(obj);
 
+var submit=document.getElementById("submit")
+submit.addEventListener
