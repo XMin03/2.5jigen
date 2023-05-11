@@ -8,7 +8,7 @@ function validar() {
     }else if (pss1.length == 0 || pss2.length == 0) {
         alert("Los campos de las contraseñas no pueden quedar vacios");
     }else if (pss1 != pss2) {
-        alert("Las contraseñas deben de coincidir");
+        alert("Las contraseñas deben coincidir");
     }else if (acepta.checked) {
         var cuenta={
             usuario:email,
