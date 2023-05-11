@@ -2,7 +2,7 @@ function validar() {
     var email = document.getElementById("email").value;
     var pss1 = document.getElementById("password1").value;
     var pss2 = document.getElementById("password2").value;
-    var acepta = document.querySelector("#acepta");
+    var acepta = document.getElementById("acepta");
     if (email.length==0) {
         alert("El campo email no puede quedar vacios");
     }else if (pss1.length == 0 || pss2.length == 0) {
@@ -11,7 +11,7 @@ function validar() {
         alert("Las contraseñas deben coincidir");
     }else if (acepta.checked) {
         var cuenta={
-            usuario:email,
+            correo:email,
             contraseña:pss1
         }
         var alerta=JSON.stringify(cuenta);
