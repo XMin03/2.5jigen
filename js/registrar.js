@@ -3,26 +3,24 @@ function validar() {
     var pss1 = document.getElementById("password1").value;
     var pss2 = document.getElementById("password2").value;
     var acepta = document.querySelector("#acepta");
-    if (email.lenght==0) {
+    if (email.length==0) {
         alert("El campo email no puede quedar vacios");
-        return false
-    }
-
-    if (pss1.length == 0 || pss2.length == 0) {
+    }else if (pss1.length == 0 || pss2.length == 0) {
         alert("Los campos de las contraseñas no pueden quedar vacios");
-        return false;
-    }
-    if (pss1 != pss2) {
+    }else if (pss1 != pss2) {
         alert("Las contraseñas deben de coincidir");
-        return false;
-    }
- 
-    
-    if (acepta.checked) {
-        alert("submitted")
+    }else if (acepta.checked) {
+        var cuenta={
+            usuario:email,
+            contraseña:pss1
+        }
+        var alerta=JSON.stringify(cuenta);
+        alert(alerta)
+        //return para que no vaya a preventDefault
         return true;
     }else{
         alert("Debes aceptar las politicas de privacidad");
-        return false;
     }
+    //para que no haga nada, no limpie no cambie pagina.
+    event.preventDefault();
 }
