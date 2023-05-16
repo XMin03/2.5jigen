@@ -26,7 +26,6 @@ aside section{
     border-bottom: 1px solid white ;
 }
 aside h2{
-    width: max-content;
     padding: 3% 12%;
     color: white;
     font-size: 1.1em;
@@ -34,7 +33,7 @@ aside h2{
 /*label botón*/
 .filter{
     position: relative;
-    top: 4px;
+    top: 3px;
     width: 2em;
     height: 1em;
     background-color: orangered;
